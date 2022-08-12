@@ -4,13 +4,15 @@ import Navbar from "react-bootstrap/Navbar"
 
 const Navigation = (props) => {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" >
+        <Navbar className="bg-dark text-white">
             <Container>
-                <Navbar.Brand href="#home">Angie's Portfolio</Navbar.Brand>
+                <Navbar.Brand className="text-white">Angie's Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Nav className="me-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
+                <Nav className="nav">
+                    <Nav.Link className="text-white" href="/">Home</Nav.Link>
+                    <Nav.Link className="text-white" href="/about">About</Nav.Link>
+                    <Nav.Link className="text-white" href="/Projects">Projects</Nav.Link>
+                    <Nav.Link className="text-white" href="/Contact">Contact</Nav.Link>
             
                 </Nav>
 

@@ -5,7 +5,10 @@ import Navigation from "./components/Navigation"
 import About from "./pages/About"
 import Home from "./pages/Home"
 import Contact from  "./pages/Contact"
-import Projects from "./pages/Projects"
+import Projects from "./pages/Projects/Projects"
+import Footer from "./components/Footer"
+import Resume from "./pages/Resume/Resume"
+
 
 function App() {
   return (
@@ -18,9 +21,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
       </Container>
+      <Footer />
     </div>
   )
 }

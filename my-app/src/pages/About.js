@@ -7,7 +7,7 @@ const boxVariant = {
   hidden: { opacity: 0, scale: 0 }
 };
 
-const Box = ({ num }) => {
+const AboutMe = ({ num }) => {
 
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -28,7 +28,22 @@ const Box = ({ num }) => {
       initial="hidden"
       animate={control}
     >
-      <h1>Boxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx {num} </h1>
+      <h1>Angela Gola</h1>
+      <h3>Previous Restaurant Events & Operations Manager turned Full-Stack Web Developer 2022. 
+        With a desire to be challenged and contribute to code-based technology, I had to leave the mundane world of food & beverage management behind! 
+        
+      My current experience is in HTML5, CSS3, JavaScript, React, jQuery, SQL, and Node, and I am open to learning new languages and technologies.
+
+      Extremely happy with my career change and excited for future opportunities and advancements in the industry.</h3>
+      <br></br><br></br>
+      
+      <img src={require(`../images/Resume1.png`)} alt="Resume"/>
+      <img src={require(`../images/Resume2.png`)} alt="Resume"/>
+      <img src={require(`../images/Resume3.png`)} alt="Resume"/>
+      <img src={require(`../images/Resume4.png`)} alt="Resume"/>
+      <img src={require(`../images/Resume5.png`)} alt="Resume"/>
+      <img src={require(`../images/Resume6.png`)} alt="Resume"/>
+      
     </motion.div>
   );
 };
@@ -36,22 +51,8 @@ const Box = ({ num }) => {
 export default function App() {
   return (
     <div className="App">
-      
-      <Box num={1} />
-      <Box num={2} />
-      <Box num={3} />
-      <Box num={1} />
-      <Box num={2} />
-      <Box num={3} />
-      <Box num={1} />
-      <Box num={2} />
-      <Box num={3} />
-      <Box num={1} />
-      <Box num={2} />
-      <Box num={3} />
-      <Box num={1} />
-      <Box num={2} />
-      <Box num={3} />
+      <AboutMe />
+  
     </div>
   );
 }

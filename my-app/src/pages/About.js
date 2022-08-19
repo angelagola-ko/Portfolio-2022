@@ -37,12 +37,7 @@ const AboutMe = ({ num }) => {
       Extremely happy with my career change and excited for future opportunities and advancements in the industry.</h3>
       <br></br><br></br>
       
-      <img src={require(`../images/Resume1.png`)} alt="Resume"/>
-      <img src={require(`../images/Resume2.png`)} alt="Resume"/>
-      <img src={require(`../images/Resume3.png`)} alt="Resume"/>
-      <img src={require(`../images/Resume4.png`)} alt="Resume"/>
-      <img src={require(`../images/Resume5.png`)} alt="Resume"/>
-      <img src={require(`../images/Resume6.png`)} alt="Resume"/>
+  
       
     </motion.div>
   );

@@ -5,7 +5,11 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 //  require('dotenv').config();
 
-
+const styling = {
+  width: "40%",
+  color: "purple"
+  // not working
+}
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -39,18 +43,18 @@ const Contact = () => {
 }
 
   return (
-    <div>
-  <div className="section">
-                <div className="container">
-                    <div className="row">  
-      <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-      <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-      <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-      <button onClick={submit}>Send Message</button>
-      <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
-    </div>
-    </div>
-    </div>
+  <div style={styling}>
+      <div className="section">
+          <div className="container text-center">
+            <div className="row">  
+                <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+                <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+                <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                <button onClick={submit}>Send Message</button>
+                <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+            </div>
+          </div>
+      </div>
     </div>
   );
 };

@@ -1,14 +1,10 @@
-.dark {
-  background-color: black;
-}
 
-.navlink {
-  color: white;
-}
 
-.nav {
-  display: flex;
-  width: auto;
-  border: 2px red solid;
-  overflow: hidden;
-}
+
+.bg {
+  background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(157, 157, 157));
+  }
+
+  .bg-f {
+    background-image: linear-gradient(to left, rgb(0, 0, 0) , rgb(157, 157, 157));
+  }

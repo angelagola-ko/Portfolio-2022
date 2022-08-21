@@ -4,7 +4,8 @@ const Footer = (props) => {
       marginTop: "3em",
       border: "1px solid #333",
       backgroundColor: "#ddd",
-      padding: "1em"
+      padding: "1em",
+      backgroundImage: "linear-gradient(to left, rgb(0, 0, 0) , rgb(157, 157, 157))",
     }
     
     return (

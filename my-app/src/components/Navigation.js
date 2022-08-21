@@ -11,7 +11,7 @@ const Navigation = (props) => {
                 <Nav className="nav">
                     <Nav.Link className="text-white" href="/">Home</Nav.Link>
                     <Nav.Link className="text-white" href="/about">About</Nav.Link>
-                    <Nav.Link className="text-white" href="/Projects">Projects</Nav.Link>
+                    <Nav.Link className="text-white" href="/Portfolio">Portfolio</Nav.Link>
                     <Nav.Link className="text-white" href="/Resume">Resume</Nav.Link>
                     <Nav.Link className="text-white" href="/Contact">Contact</Nav.Link>
             

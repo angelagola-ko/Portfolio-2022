@@ -9,7 +9,10 @@ import React, { useState } from "react";
 const HomePage = (props) => {
     return (
       <div>
-        <h1 style={{fontSize:"70px", color:"blue", textAlign: "center"}}>This is the Home page</h1>
+        <h1 style={{fontSize:"70px", color:"blue", textAlign: "center"}}>Hello</h1>
+        <p style={{textAlign:"center"}}> Welcome to my page.<br></br>
+        The Home page is still currently being designed. <br>
+        </br>Check out the links in the navbar!</p>
       </div>
     )
   }

@@ -26,7 +26,7 @@
 
 
 
-  ![Example Image](./images/ExampleImg.png)
+  ![Example Image](https://user-images.githubusercontent.com/95582357/185826071-33cb6d21-ebf6-4a0d-a4c2-c7a3ec645be5.png)
 
 
   

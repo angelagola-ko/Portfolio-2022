@@ -1,20 +1,42 @@
-// import { useSpring, animated } from 'react-spring';
 import React, { useState } from "react";
+import { render } from "react-dom";
+import { useTrail, animated as a } from "react-spring";
+import "./home.css";
 
- 
-// function App() {
-//   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
-//   return <animated.div style={props}>I will fade in</animated.div>
-// }
-const HomePage = (props) => {
-    return (
+const items = ["Hello,", "I'm Angie.","A FUll Stack","Developer."];
+const items2 =["I'm a Full Stack Developer"];
+const config = { mass: 5, tension: 2000, friction: 500 };
+
+
+function App() {
+  const [toggle, set] = useState(true);
+  const trail = useTrail(items.length, {
+    config,
+    opacity: toggle ? 1 : 0,
+    x: toggle ? 0 : 20,
+    height: toggle ? 80 : 0,
+    from: { opacity: 0, x: 20, height: 0 }
+  });
+
+  return (
+    <div className="trails-main" onClick={() => set(state => !state)}>
       <div>
-        <h1 style={{fontSize:"70px", color:"blue", textAlign: "center"}}>Hello</h1>
-        <p style={{textAlign:"center"}}> Welcome to my page.<br></br>
-        The Home page is still currently being designed. <br>
-        </br>Check out the links in the navbar!</p>
+        {trail.map(({ x, height, ...rest }, index) => (
+          <a.div
+            key={items[index]}
+            className="trails-text"
+            style={{
+              ...rest,
+              transform: x.interpolate(x => `translate3d(0,${x}px,0)`)
+            }}
+          >
+            <a.div style={{ height }}>{items[index]}</a.div>
+          </a.div>
+        ))}
       </div>
-    )
-  }
-  
-  export default HomePage
+    </div>
+  );
+}
+
+export default App;
+

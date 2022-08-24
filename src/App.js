@@ -14,9 +14,9 @@ import Portfolio from "./pages/Projects/Portfolio"
 function App() {
   return (
     <div>
+      <Router basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Container style={{ paddingTop: "50px" }}>
-      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,8 +24,8 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
-      </Router>
       </Container>
+      </Router>
       <Footer />
     </div>
   )

@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { useTrail, animated as a } from "react-spring";
 import "./home.css";
 
-const items = ["Hello,", "I'm Angie.","A FUll Stack","Developer."];
+const items = ["Hello,", "I'm Angie.","A Junior","FUll Stack","Developer."];
 const items2 =["I'm a Full Stack Developer"];
 const config = { mass: 5, tension: 2000, friction: 500 };
 

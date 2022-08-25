@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
+import Button from 'react-bootstrap/Button';
 //  require('dotenv').config();
 
 const styling = {
@@ -50,7 +51,7 @@ const Contact = () => {
                 <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
                 <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
                 <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                <button onClick={submit}>Send Message</button>
+                <Button onClick={submit} variant="dark">Send Message</Button>
                 <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
             </div>
           </div>

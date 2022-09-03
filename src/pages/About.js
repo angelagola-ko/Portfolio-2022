@@ -8,17 +8,26 @@ const boxVariant = {
 };
 
 const styling = {
-    width: "20%",
-    margin: "0px 30px 0px 0px",
-    border: "3px solid purple",
+    width: "70%",
+    margin: "auto",
+    display: "block",
+    textAlign: "center",
+    // border: "3px solid purple",
     float: "left",
-    borderRadius: "25%",
+    borderRadius: "50px",
+    justifyContent: "center",
+    alignItems: "center",
 
 }
 
 const styling2 = {
   width: "75%",
   display:"flex"
+}
+
+const styling3 = {
+  alignItems: "center",
+  justifyContent: "center",
 }
 const AboutMe = ({ num }) => {
 
@@ -34,16 +43,18 @@ const AboutMe = ({ num }) => {
   }, [control, inView]);
 
   return (
+    <div style={styling3}>
+      
     <motion.div
       className="box"
       ref={ref}
       variants={boxVariant}
       initial="hidden"
       animate={control}
-  
-    >
+      
+      >
       <h1 className="text-center py-4">Angela Gola</h1>
-      <img style={styling} src='https://user-images.githubusercontent.com/95582357/185797558-6e71c3af-224a-4415-9b05-232a32c79361.png'/>
+      <img style={styling} src='https://user-images.githubusercontent.com/95582357/188279550-61d6e6a2-411d-4ef3-9a54-038db2d3a1be.png'/>
       <h3 style={styling2}>Previous Restaurant Events & Operations Manager turned Full-Stack Web Developer 2022. 
         With a desire to be challenged and contribute to code-based technology, I had to leave the mundane world of food & beverage management behind! 
         <br></br><br></br>
@@ -57,6 +68,7 @@ const AboutMe = ({ num }) => {
   
       
     </motion.div>
+      </div>
   );
 };
 

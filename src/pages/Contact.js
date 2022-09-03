@@ -7,9 +7,9 @@ import Button from 'react-bootstrap/Button';
 //  require('dotenv').config();
 
 const styling = {
-  width: "40%",
-  color: "purple"
-  // not working
+  width: "400px",
+  color: "purple",
+  margin:"auto"
 }
 
 const Contact = () => {

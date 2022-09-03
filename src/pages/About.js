@@ -8,27 +8,24 @@ const boxVariant = {
 };
 
 const styling = {
-    width: "70%",
+    width: "75%",
     margin: "auto",
     display: "block",
     textAlign: "center",
-    // border: "3px solid purple",
-    float: "left",
+     border: "3px dotted teal",
+    // float: "left",
     borderRadius: "50px",
-    justifyContent: "center",
-    alignItems: "center",
 
 }
 
 const styling2 = {
   width: "75%",
-  display:"flex"
+  margin:"auto",
+  alignItems:"center",
+  justifyContent: "center",
+  paddingTop: "25px"
 }
 
-const styling3 = {
-  alignItems: "center",
-  justifyContent: "center",
-}
 const AboutMe = ({ num }) => {
 
   const control = useAnimation();
@@ -38,13 +35,11 @@ const AboutMe = ({ num }) => {
     if (inView) {
       control.start("visible");
     } else {
-      control.start("hidden");
+      control.start("visible");
     }
   }, [control, inView]);
 
-  return (
-    <div style={styling3}>
-      
+  return ( 
     <motion.div
       className="box"
       ref={ref}
@@ -68,7 +63,6 @@ const AboutMe = ({ num }) => {
   
       
     </motion.div>
-      </div>
   );
 };
 

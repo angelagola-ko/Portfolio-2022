@@ -51,7 +51,7 @@
   .card .content {
     font-size: 18px;
     background-color: var(--white);
-    color: var(--dark);
+    color: rgb(109, 109, 255);
     font-weight: bold;
     text-align: center;
   }
@@ -74,7 +74,7 @@
   .topics {
     font-size: small;
     font-style: italic;
-    color: var(--cultured);
+    color: rgb(163, 42, 188);
     background-color: var(--white);
     border-radius: 50px;
   }

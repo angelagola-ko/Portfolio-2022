@@ -9,7 +9,8 @@ import Button from 'react-bootstrap/Button';
 const styling = {
   width: "400px",
   color: "purple",
-  margin:"auto"
+  margin:"auto",
+
 }
 
 const Contact = () => {

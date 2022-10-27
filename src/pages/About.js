@@ -55,7 +55,7 @@ const AboutMe = ({ num }) => {
         <br></br><br></br>
      
       <br></br>
-      In my spare time I enjoy being active and staying healthy. When I'm not out exploring, I take enjoyment in cooking, art, and photography. When I am out and about you can find me scuba diving, hiking, skiing or snowboarding, and checking countries off of my bucket list!
+      In my spare time I enjoy being active and staying healthy. When I'm not out exploring, I take enjoyment in cooking, art, and photography. When I am out and about you can find me scuba diving, hiking, skiing or snowboarding, and checking off travel destinations on my bucket list!
       </h3>
       <br></br><br></br>
       <img style={styling} src='https://user-images.githubusercontent.com/95582357/198161370-d033b0a7-5f2d-4783-b13b-ac8b50634a87.png'/>

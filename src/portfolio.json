@@ -1,6 +1,14 @@
 [
     {
         "id": 1,
+        "name": "Artem Lab",
+        "image": "https://user-images.githubusercontent.com/95582357/198152442-d78ca9fc-8d64-42b9-bfa7-9701239d00ae.png",
+        "github": "https://github.com/angelagola-ko/artem_lab",
+        "deploy": "https://artem-lab.netlify.app",
+        "topics": "Graphql, React, Netlify"
+    },
+    {
+        "id": 2,
         "name": "Travelot",
         "image": "https://user-images.githubusercontent.com/95582357/185771533-bd4cb1f7-78d0-4748-9bef-9ae51978e65e.png",
         "github": "https://github.com/angelagola-ko/Travelot-Destination-Planner",
@@ -8,7 +16,7 @@
         "topics": "node, sequelize, handlebars, express-session, mysql, model-view-controller, dotenv"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Zoo Keeper",
         "image": "https://user-images.githubusercontent.com/95582357/185771465-0c8d7d9e-fed0-4d1c-bf95-ddd570be0725.png",
         "github": "https://github.com/angelagola-ko/Zookeeper-app",
@@ -16,7 +24,7 @@
         "topics": "node, sequelize, handlebars, express-session, jawsdb, mysql, model-view-controller, dotenv"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Vocab Builder",
         "image": "https://user-images.githubusercontent.com/95582357/185771567-a4a18e5d-1307-4d88-bea1-3d63f498fc77.png",
         "github": "https://github.com/angelagola-ko/vocabBuilder",
@@ -24,7 +32,7 @@
         "topics": "node, sequelize, handlebars, express-session, mysql, model-view-controller, dotenv"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Weather Dashboard",
         "image": "https://user-images.githubusercontent.com/95582357/185771636-d7f8028d-2fbd-4831-b946-0b4161f3049a.png",
         "github": "https://github.com/angelagola-ko/Weather-Dashboard",
@@ -32,7 +40,7 @@
         "topics": "moment.js, javascript, jQuery, localStorage, API"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Just Tech News",
         "image": "https://user-images.githubusercontent.com/95582357/185771597-f564cd96-d24d-4fb1-9a54-18c1c57b3fc6.png",
         "github": "https://github.com/angelagola-ko/just-tech-news",
@@ -40,7 +48,7 @@
         "topics": "node, express, javascript, mongoDB, mongoose, nodemon"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Work Day Scheduler",
         "image": "https://user-images.githubusercontent.com/95582357/185771683-2245a775-64f9-4956-a389-d8ff51a329a1.png",
         "github": "https://github.com/angelagola-ko/Personal-Calender",

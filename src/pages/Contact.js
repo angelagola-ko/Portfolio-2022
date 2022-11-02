@@ -10,7 +10,6 @@ const styling = {
   width: "400px",
   color: "purple",
   margin:"auto",
-
 }
 
 const Contact = () => {
@@ -46,6 +45,7 @@ const Contact = () => {
 
   return (
   <div style={styling}>
+    <h1>Contact Me</h1>
       <div className="section">
           <div className="container text-center">
             <div className="row">  
@@ -53,10 +53,12 @@ const Contact = () => {
                 <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
                 <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 <Button onClick={submit} variant="dark">Send Message</Button>
-                <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+                {/* <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+                <br/> */}
             </div>
           </div>
       </div>
+                <h5>Email: <a href = "mailto: abc@example.com">angelagola.ko@gmail.com</a></h5>
     </div>
   );
 };
